@@ -20,34 +20,20 @@ The deep learning model is implemented in Python (PyTorch/TensorFlow).
 * PyTorch / TensorFlow 1.11+
 * NumPy, Pandas, Scikit-learn
 
-To install dependencies, run:
-```bash
-pip install -r requirements.txt
-
 ### MATLAB Environment (Signal Processing)
-MATLAB R2022b (or newer recommended)
-Signal Processing Toolbox
+* MATLAB R2022b (or newer recommended)
+* Signal Processing Toolbox
 
-3. Project Structure
-├── data/               # Place sample data here (Do NOT upload full patient data)
-├── preprocessing/      # MATLAB scripts for filtering and segmentation
-├── model/              # Python scripts for AM-BiLSTM construction
-├── training/           # Training loops and validation scripts
-├── results/            # Confusion matrices and plots
-├── main.py             # Main entry point for training/testing
-└── README.md           # This file
+## 3. Project Structure
+├── data/
+├── preprocessing/
+├── inference/
+├── train/
+├── LICENSE.txt
+└── README.md
 
-4. Usage
-Step 1: Data Preparation
-Run the MATLAB script preprocessing/data_process.m to filter and segment the raw signals. (Note: Due to privacy regulations, only a sample dataset is provided in this repository.)
-
-Step 2: Training the Model
-To train the AM-BiLSTM model, run:
-python main.py --mode train
-
-Step 3: Evaluation
-To evaluate the model and apply Markov Chain correction:
-python main.py --mode test
-
-5. License
+## 4. License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 5. Note
+As subsequent research will build upon the current work, only partial content is available for this project at this time. Full extended codebases may be released upon the completion of future studies.
